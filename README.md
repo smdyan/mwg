@@ -12,4 +12,5 @@
 ## Run the script to generate keys 'bash ./keygen.sh';
 ## Copy/Past the keys from 'secret.txt' to the all 'wg0.conf' in each wg container;
 ## Remove the 'secret.txt' from the container;
+## Start 'docker compose up -d'
 
