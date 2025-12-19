@@ -1,3 +1,4 @@
+name: twg
 services:
   twg_srv:
     container_name: twg1

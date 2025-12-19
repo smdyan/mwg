@@ -1,3 +1,4 @@
+name: twg
 services:
   twg_cli:
     container_name: twg4
@@ -17,6 +18,7 @@ services:
 
 networks:
   mynet:
+    name: mynet
     driver: bridge
     ipam:
       config:
