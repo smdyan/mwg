@@ -1,10 +1,9 @@
-# twg
-## Joining Docker networks on remote servers into vpn
+# mwg - vps to mikrotik
+## 
 
-## twg1 - Wireguard Server     ruvds   10.13.13.11
-## twg2 - Wireguard Client     vmpico  10.13.13.12
-## twg3 - Wireguard Client     mac     10.13.13.13
-## twg4 - Wireguard Client     acer   10.13.13.14
+## mwg1 - Wireguard Server     vmpico   10.13.14.1
+## mwg2 - Wireguard Client     mikrotik1  10.13.14.2
+
 
 # Generating Wiregiard keys
 ## Note: 'wg' installed is required to run 'keygen.sh'.
