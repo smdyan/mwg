@@ -1,7 +1,7 @@
 name: mwg
 services:
-  mwg1_srv:
-    container_name: mwg1
+  mwg2:
+    container_name: mwg2
     build:
       context: .
     volumes:
@@ -17,7 +17,7 @@ services:
       - 51830:51830/udp
     networks:
       mynet:
-        ipv4_address: 172.21.0.14
+        ipv4_address: 172.22.0.14
     tty: true
     restart: always
 
@@ -27,5 +27,5 @@ networks:
     driver: bridge
     ipam:
       config:
-      - subnet: 172.21.0.0/24
-        gateway: 172.21.0.1
+      - subnet: 172.22.0.0/24
+        gateway: 172.22.0.1
