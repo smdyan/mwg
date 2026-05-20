@@ -9,7 +9,7 @@ services:
       - SYS_MODULE
     networks:
       mynet:
-        ipv4_address: 172.22.0.14
+        ipv4_address: 172.21.0.14
     ports:
       - 51830:51830/udp
     tty: true
