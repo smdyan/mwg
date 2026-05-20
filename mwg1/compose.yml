@@ -7,15 +7,23 @@ services:
     cap_add:
       - NET_ADMIN
       - SYS_MODULE
+    devices:
+      - /dev/net/tun:/dev/net/tun
+    sysctls:
+      - net.ipv4.ip_forward=1
+    ports:
+      - 51830:51830/udp
     networks:
       mynet:
         ipv4_address: 172.21.0.14
-    ports:
-      - 51830:51830/udp
     tty: true
     restart: always
 
 networks:
   mynet:
     name: mynet
-    external: true
+    driver: bridge
+    ipam:
+      config:
+      - subnet: 172.21.0.0/24
+        gateway: 172.21.0.1
