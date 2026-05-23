@@ -25,6 +25,8 @@ networks:
   mynet:
     name: mynet
     driver: bridge
+    driver_opts:
+      com.docker.network.bridge.name: br-docker22
     ipam:
       config:
       - subnet: 172.22.0.0/24
